@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/main_menu_screen.dart';
 import 'package:flutter_application_1/utils/colors.dart';
 
 void main() {
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: bgColor),
-      home: const Text('Flutter Demo Home Page'),
+      home: const MainMenuScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
