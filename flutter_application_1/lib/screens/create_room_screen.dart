@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/widgets/custom_button.dart';
 import 'package:flutter_application_1/widgets/custom_text.dart';
 import 'package:flutter_application_1/widgets/custom_textfield.dart';
 
@@ -37,6 +38,8 @@ class _CreateRoomScreenState extends State<CreateRoomScreen> {
               controller: _nameController,
               hintText: "Enter your Text",
             ),
+            SizedBox(height: 10),
+            CustomButton(onTap: () {}, text: 'Create'),
           ],
         ),
       ),
