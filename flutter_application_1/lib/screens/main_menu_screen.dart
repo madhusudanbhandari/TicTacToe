@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/create_room_screen.dart';
+import 'package:flutter_application_1/screens/join_room.screen.dart';
 import 'package:flutter_application_1/widgets/custom_button.dart';
 
 class MainMenuScreen extends StatelessWidget {
@@ -11,9 +13,22 @@ class MainMenuScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          CustomButton(onTap: () {}, text: 'Create Room'),
+          CustomButton(
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const CreateRoomScreen()),
+            ),
+            text: 'Create Room',
+          ),
           SizedBox(height: 10),
-          CustomButton(onTap: () {}, text: 'Join Room'),
+          CustomButton(
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const JoinRoomScreen()),
+            ),
+
+            text: 'Join Room',
+          ),
         ],
       ),
     );
